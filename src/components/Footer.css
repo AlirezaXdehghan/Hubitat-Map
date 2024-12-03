@@ -1,0 +1,9 @@
+footer p {
+    font-size: 12px;
+    font: "Times New Roman";
+}
+
+footer {
+    align-content: center;
+    align-items: center;
+}

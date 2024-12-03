@@ -1,0 +1,24 @@
+.results-pane {
+    overflow-y: auto;
+    max-height: 50vh;
+    margin: 5px;
+}
+
+.results-pane li {
+    padding: 8px 0;         /* Add padding inside each list item */
+    margin-bottom: 8px;     /* Add margin to create space between list items */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border between items for separation */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    cursor: pointer;
+}
+
+.results-pane li:hover {
+    background-color: #f0f0f0; /* Optional: Change background color on hover */
+    color: #007bff; /* Optional: Change text color on hover */
+}
+
+.results-pane ul {
+    margin: 0;              /* Remove default margin from the ul */
+    padding: 0;             /* Remove default padding from the ul */
+    list-style-type: none;  /* Remove default bullet points */
+}

@@ -1,0 +1,18 @@
+header {
+    display: flex;
+}
+
+header img {
+    height: 80px; /* Adjust the height to the desired size for your logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+header p {
+    margin: 2% 0 0 1%;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+}
+
+header img:hover{
+    transform: scale(1.05);
+}

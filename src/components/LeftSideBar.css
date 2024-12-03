@@ -1,0 +1,133 @@
+/* src/LeftSidebar.css */
+.sidebar-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.sidebar-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.sidebar-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sidebar-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 100ms, transform 300ms;
+}
+
+.sidebar-enter-done {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sidebar-exit-done {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-height: 70%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.grid-images {
+
+    justifyContent: center;
+    alignItems: center;
+    minHeight: 400px;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attributes {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.attributes li {
+    padding: 8px 0;         /* Add padding inside each list item */
+    margin-bottom: 8px;     /* Add margin to create space between list items */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border between items for separation */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+.attributes ul {
+    margin: 0;              /* Remove default margin from the ul */
+    padding: 0;             /* Remove default padding from the ul */
+    list-style-type: none;  /* Remove default bullet points */
+}
+
+.attributes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the div without distortion */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d82);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.download-button:active {
+    background: linear-gradient(135deg, #003d82, #001f49);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}

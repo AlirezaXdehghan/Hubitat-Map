@@ -1,0 +1,150 @@
+.App {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  max-width: 95%; /* Set a max-width for the entire content */
+  margin: 0 auto; /* Center the .App container */
+}
+
+.Header {
+  flex-direction: row;
+  display: flex;
+  width: 100%; /* Ensure it takes full width */
+  margin-top: 1%;
+  border-bottom: 3px solid #C80815;
+
+}
+
+.Nav {
+  flex-direction: row;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes full width */
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.nav-item {
+  margin: 0 15%;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  margin: 0;
+  padding: 0;
+}
+
+.NavBar {
+  flex-direction: row;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes full width */
+  margin-top: 0.1%;
+  border-bottom: 3px solid #C80815;
+}
+
+.SearchBar {
+  flex-direction: row;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Ensure it takes full width */
+  padding-bottom: 0.1%;
+}
+
+.SearchDiv {
+  width: 200%;
+}
+
+.SearchDiv input {
+  width: 50%; /* Initial width relative to the container */
+  padding: 10px 20px; /* Adds padding inside the input */
+  font-size: 16px; /* Increases the font size */
+  border: 1px solid #ddd; /* Adds a light border */
+  border-radius: 25px; /* Rounds the corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  outline: none; /* Removes the default outline */
+  transition: all 0.5s ease; /* Adds a transition for smooth hover/focus effects */
+  transform-origin: center; /* Ensures the expansion happens from the center */
+  position: relative; /* Necessary for the centering effect */
+  left: 0;
+  right: 0;
+}
+
+.SearchDiv input:focus {
+  width: 75%; /* Expands to 150% width on focus */
+  border-color: #4285f4;
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.5);
+  position: relative; /* Ensures the input stays centered when expanded */
+  transform: translateX(-15%); /* Centers the input by adjusting its position */
+}
+
+
+.SearchDiv button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  left: -10%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.SearchDiv button:hover {
+  background-color: rgba(66, 133, 244, 1);
+}
+
+.content {
+  width: 100%; /* Ensure it takes full width */
+  display: flex;
+  flex-direction: column;
+}
+
+.one-fourth {
+  width: 20%;
+  flex-grow: 2; /* Grow factor */
+  border: 1px solid #e1e8ea;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+}
+
+.two-fourth {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  width: 60%;
+  flex-grow: 6; /* Grow factor */
+}
+
+.main-content {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.Footer {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Ensure it takes full width */
+  border-top: 3px solid #C80815;
+
+}

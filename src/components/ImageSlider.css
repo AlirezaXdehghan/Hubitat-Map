@@ -1,0 +1,7 @@
+.slider {
+    display: flex;
+    border: 1px solid #e1e8ea;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+    margin-bottom: 2%;
+}
