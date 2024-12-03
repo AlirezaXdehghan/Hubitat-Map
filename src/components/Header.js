@@ -8,8 +8,7 @@ function Header() {
         <header>
             <a href={"https://serendpt.net"}><img src={serendpt} alt={"SerenDPT"}/></a>
             <a href={"https://veniceprojectcenter.org"}> <img src={vpclogo} alt={"Venice Project Center"}/></a>
-            <p>This is some description for the project! Venice Project Center together with SerenDPT are devoted to the preservation and restoration of Venice, Italy.
-            Please help us preserve this inestimable collection by using our Apps to collect up-to-date information about the artifacts.</p>
+            <p>Venice Project Center together with SerenDPT are devoted to assist the HUBitat Network in developing the foundational information on individual members to understand the nuanced strengths, challenges, and areas for receiving and providing support to members in future collaborative developments.</p>
         </header>
     );
 }
